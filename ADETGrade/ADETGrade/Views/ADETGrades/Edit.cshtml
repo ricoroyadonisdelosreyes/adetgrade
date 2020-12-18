@@ -1,0 +1,189 @@
+﻿@model ADETGrade.Models.ADETGrades
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>ADETGrades</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="StudName" class="control-label"></label>
+                <input asp-for="StudName" class="form-control" />
+                <span asp-validation-for="StudName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address" class="control-label"></label>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Course" class="control-label"></label>
+                <input asp-for="Course" class="form-control" />
+                <span asp-validation-for="Course" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="YearSection" class="control-label"></label>
+                <input asp-for="YearSection" class="form-control" />
+                <span asp-validation-for="YearSection" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PrelimQ1" class="control-label"></label>
+                <input asp-for="PrelimQ1" class="form-control" />
+                <span asp-validation-for="PrelimQ1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PrelimQ2" class="control-label"></label>
+                <input asp-for="PrelimQ2" class="form-control" />
+                <span asp-validation-for="PrelimQ2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PrelimQ3" class="control-label"></label>
+                <input asp-for="PrelimQ3" class="form-control" />
+                <span asp-validation-for="PrelimQ3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PrelimA1" class="control-label"></label>
+                <input asp-for="PrelimA1" class="form-control" />
+                <span asp-validation-for="PrelimA1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PrelimA2" class="control-label"></label>
+                <input asp-for="PrelimA2" class="form-control" />
+                <span asp-validation-for="PrelimA2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PrelimA3" class="control-label"></label>
+                <input asp-for="PrelimA3" class="form-control" />
+                <span asp-validation-for="PrelimA3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PrelimTotal" class="control-label"></label>
+                <input asp-for="PrelimTotal" class="form-control" />
+                <span asp-validation-for="PrelimTotal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MidtermQ1" class="control-label"></label>
+                <input asp-for="MidtermQ1" class="form-control" />
+                <span asp-validation-for="MidtermQ1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MidtermQ2" class="control-label"></label>
+                <input asp-for="MidtermQ2" class="form-control" />
+                <span asp-validation-for="MidtermQ2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MidtermQ3" class="control-label"></label>
+                <input asp-for="MidtermQ3" class="form-control" />
+                <span asp-validation-for="MidtermQ3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MidtermA1" class="control-label"></label>
+                <input asp-for="MidtermA1" class="form-control" />
+                <span asp-validation-for="MidtermA1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MidtermA2" class="control-label"></label>
+                <input asp-for="MidtermA2" class="form-control" />
+                <span asp-validation-for="MidtermA2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MidtermA3" class="control-label"></label>
+                <input asp-for="MidtermA3" class="form-control" />
+                <span asp-validation-for="MidtermA3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MidTermTotal" class="control-label"></label>
+                <input asp-for="MidTermTotal" class="form-control" />
+                <span asp-validation-for="MidTermTotal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PreFinalQ1" class="control-label"></label>
+                <input asp-for="PreFinalQ1" class="form-control" />
+                <span asp-validation-for="PreFinalQ1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PreFinalQ2" class="control-label"></label>
+                <input asp-for="PreFinalQ2" class="form-control" />
+                <span asp-validation-for="PreFinalQ2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PreFinalQ3" class="control-label"></label>
+                <input asp-for="PreFinalQ3" class="form-control" />
+                <span asp-validation-for="PreFinalQ3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PreFinalA1" class="control-label"></label>
+                <input asp-for="PreFinalA1" class="form-control" />
+                <span asp-validation-for="PreFinalA1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PreFinalA2" class="control-label"></label>
+                <input asp-for="PreFinalA2" class="form-control" />
+                <span asp-validation-for="PreFinalA2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PreFinalA3" class="control-label"></label>
+                <input asp-for="PreFinalA3" class="form-control" />
+                <span asp-validation-for="PreFinalA3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PreFinalTotal" class="control-label"></label>
+                <input asp-for="PreFinalTotal" class="form-control" />
+                <span asp-validation-for="PreFinalTotal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FinalQ1" class="control-label"></label>
+                <input asp-for="FinalQ1" class="form-control" />
+                <span asp-validation-for="FinalQ1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FinalQ2" class="control-label"></label>
+                <input asp-for="FinalQ2" class="form-control" />
+                <span asp-validation-for="FinalQ2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FinalQ3" class="control-label"></label>
+                <input asp-for="FinalQ3" class="form-control" />
+                <span asp-validation-for="FinalQ3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FinalA1" class="control-label"></label>
+                <input asp-for="FinalA1" class="form-control" />
+                <span asp-validation-for="FinalA1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FinalA2" class="control-label"></label>
+                <input asp-for="FinalA2" class="form-control" />
+                <span asp-validation-for="FinalA2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FinalA3" class="control-label"></label>
+                <input asp-for="FinalA3" class="form-control" />
+                <span asp-validation-for="FinalA3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FinalTotal" class="control-label"></label>
+                <input asp-for="FinalTotal" class="form-control" />
+                <span asp-validation-for="FinalTotal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

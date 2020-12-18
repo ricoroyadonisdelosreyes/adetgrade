@@ -1,0 +1,233 @@
+﻿@model IEnumerable<ADETGrade.Models.ADETGrades>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Add New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th width="300">
+
+            </th>
+            <th>
+
+            </th>
+            <th colspan="7">
+                Prelim
+            </th>
+            <th colspan="7">
+                MidTerm
+            </th>
+            <th colspan="7">
+                PreFinal
+            </th>
+            <th colspan="7">
+                Final
+            </th>
+            <th colspan="4">
+                
+            </th>
+        </tr>
+
+        <tr>
+            <th width="500">
+                @Html.DisplayNameFor(model => model.StudName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+              
+            <th>
+                @Html.DisplayNameFor(model => model.PrelimQ1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrelimQ2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrelimQ3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrelimA1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrelimA2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrelimA3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrelimTotal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MidtermQ1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MidtermQ2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MidtermQ3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MidtermA1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MidtermA2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MidtermA3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MidTermTotal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PreFinalQ1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PreFinalQ2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PreFinalQ3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PreFinalA1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PreFinalA2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PreFinalA3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PreFinalTotal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinalQ1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinalQ2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinalQ3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinalA1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinalA2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinalA3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinalTotal)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.PrelimQ1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrelimQ2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrelimQ3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrelimA1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrelimA2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrelimA3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrelimTotal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MidtermQ1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MidtermQ2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MidtermQ3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MidtermA1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MidtermA2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MidtermA3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MidTermTotal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PreFinalQ1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PreFinalQ2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PreFinalQ3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PreFinalA1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PreFinalA2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PreFinalA3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PreFinalTotal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FinalQ1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FinalQ2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FinalQ3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FinalA1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FinalA2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FinalA3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FinalTotal)
+            </td>
+            <td><a asp-action="Edit" asp-route-id="@item.Id">Edit</a></td>
+            <td><a asp-action="Details" asp-route-id="@item.Id">Details</a></td>
+            <td><a asp-action="Delete" asp-route-id="@item.Id">Delete</a></td>
+        </tr>
+}
+    </tbody>
+</table>

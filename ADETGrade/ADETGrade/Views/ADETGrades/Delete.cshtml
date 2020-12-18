@@ -1,0 +1,213 @@
+﻿@model ADETGrade.Models.ADETGrades
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>ADETGrades</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.StudName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.StudName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Course)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Course)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.YearSection)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.YearSection)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PrelimQ1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PrelimQ1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PrelimQ2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PrelimQ2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PrelimQ3)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PrelimQ3)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PrelimA1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PrelimA1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PrelimA2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PrelimA2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PrelimA3)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PrelimA3)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PrelimTotal)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PrelimTotal)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MidtermQ1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MidtermQ1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MidtermQ2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MidtermQ2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MidtermQ3)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MidtermQ3)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MidtermA1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MidtermA1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MidtermA2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MidtermA2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MidtermA3)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MidtermA3)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MidTermTotal)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MidTermTotal)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PreFinalQ1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PreFinalQ1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PreFinalQ2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PreFinalQ2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PreFinalQ3)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PreFinalQ3)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PreFinalA1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PreFinalA1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PreFinalA2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PreFinalA2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PreFinalA3)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PreFinalA3)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PreFinalTotal)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PreFinalTotal)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FinalQ1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FinalQ1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FinalQ2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FinalQ2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FinalQ3)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FinalQ3)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FinalA1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FinalA1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FinalA2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FinalA2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FinalA3)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FinalA3)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FinalTotal)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FinalTotal)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
